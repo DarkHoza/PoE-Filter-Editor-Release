@@ -23,7 +23,7 @@ Path of Exile **1·2** 의 **NeverSink 계열 아이템 필터**를 한국어로
 - **필터/사운드 내보내기**: 필터가 쓰는 mp3 를 필터와 함께 zip 하나로 — 친구에게 그대로 전달
 - **안전한 저장**: 항상 새 이름의 새 파일로 저장 — 원본 필터는 건드리지 않아요
 
-주요 기능을 화면 예시와 함께 보려면 **[기능 안내 문서](../../releases/latest/download/PoE-Filter-Editor-Guide.html)** (받아서 브라우저로 열기)를, 자세한 사용법은 각 릴리스의 `PoE-Filter-Editor-Usage-Guide.txt` 를 보세요.
+주요 기능을 화면 예시와 함께 보려면 **[기능 안내 문서](https://darkhoza.github.io/PoE-Filter-Editor-Release/)** (브라우저에서 바로 열려요)를, 자세한 사용법은 각 릴리스의 `PoE-Filter-Editor-Usage-Guide.txt` 를 보세요.
 
 ## 안내
 
