@@ -65,7 +65,7 @@ footer p { margin: 4px 0; }
 <body>
 <header class="hero">
   <div class="wrap">
-    <span class="badge">v0.3.7 · Windows · 무료</span>
+    <span class="badge">v0.3.9 · Windows · 무료</span>
     <h1>PoE 필터 편집기</h1>
     <p class="lead">Path of Exile 1·2 의 NeverSink 계열 아이템 필터를 한국어로 보고, 티어·사운드·표시 스타일을 바로 고칠 수 있는 Windows 프로그램입니다. exe 파일 하나로 동작하며 따로 설치할 것이 없습니다.</p>
     <div class="cta">
@@ -75,7 +75,7 @@ footer p { margin: 4px 0; }
     <div class="points">
       <div class="point"><b>PoE 1 · PoE 2</b><span>두 게임의 필터를 버튼 하나로 바꿔 가며 편집할 수 있습니다.</span></div>
       <div class="point"><b>한글 아이템 이름</b><span>아이템 이름을 한글로 보여 주고 한글·영어 모두로 찾을 수 있습니다.</span></div>
-      <div class="point"><b>안전한 저장</b><span>항상 새 이름의 새 파일로 저장합니다. 원본 필터는 건드리지 않습니다.</span></div>
+      <div class="point"><b>안전한 저장</b><span>기본은 새 이름의 새 파일로 저장합니다. 원하면 작업 중이던 필터에 덮어쓸 수 있고, 이때 원본은 자동으로 백업됩니다.</span></div>
       <div class="point"><b>자동 업데이트</b><span>새 버전이 나오면 알려 주고 버튼 하나로 업데이트합니다.</span></div>
     </div>
   </div>
@@ -126,7 +126,8 @@ footer p { margin: 4px 0; }
 <p>블록 편집 창에서 다음 항목을 바꿀 수 있습니다. 바꾸는 대로 위쪽 <b>라벨 미리보기</b>에 바로 반영됩니다.</p>
 <ul>
 <li><b>상태</b> — 표시 / 숨김(Alt 를 누르면 보임) / 꺼짐(블록 자체를 무시)</li>
-<li><b>스택 조건</b> — 몇 개 이상 쌓였을 때 이 블록에 걸릴지</li>
+<li><b>단일 / 스택</b> — 단일은 개수와 상관없이, 스택은 정한 개수(예: 3개 이상)만큼 쌓였을 때만 이 블록에 걸립니다. 버튼 하나로 서로 바꿀 수 있습니다.</li>
+<li><b>티어 삭제</b> — 왼쪽 아래 <b>🗑 이 티어 삭제</b>로 블록을 통째로 지웁니다. 남은 아이템은 고른 티어로 옮겨지며, 새 티어 만들기로 만든 티어라면 원래 티어가 미리 골라져 있습니다.</li>
 <li><b>사운드</b> — 게임 내장 1~16번 또는 mp3, 볼륨. 다른 폴더의 mp3 를 가져올 수도 있습니다.</li>
 <li><b>표시 스타일</b> — 글자 크기, 글자색·테두리·배경(불투명도 포함), 미니맵 아이콘(크기·색·모양), 빛기둥(빔). 체크를 끄면 게임 기본값이 됩니다.</li>
 </ul>
@@ -172,7 +173,7 @@ footer p { margin: 4px 0; }
   <ul>
     <li><a href="https://github.com/DarkHoza/PoE-Filter-Editor-Release/releases/latest">Releases</a> 에서 <code>PoE-Filter-Editor.exe</code> 를 받아 바탕화면이나 문서 폴더처럼 <b>내 폴더</b>에 두고 실행합니다. (Program Files 에 두면 자동 업데이트가 막힙니다)</li>
     <li>처음 실행할 때 "Windows의 PC 보호" 창이 뜨면 <b>추가 정보 → 실행</b>을 누릅니다. 서명되지 않은 개인 제작 프로그램이라 표시되는 안내입니다.</li>
-    <li>고친 필터는 <b>새 파일로 저장</b>(<kbd>Ctrl</kbd>+<kbd>S</kbd>)합니다. 게임 필터 목록에는 <code>.filter</code> 파일만 나오므로 이름은 <code>.filter</code> 로 제안됩니다. 게임에서는 <b>ESC → 설정 → UI → 아이템 필터</b>에서 고릅니다.</li>
+    <li>고친 필터는 <b>저장</b>(<kbd>Ctrl</kbd>+<kbd>S</kbd>)합니다. 기본은 새 파일로 저장하며, <b>작업 중이던 필터에 덮어쓰기</b>에 체크하면 지금 연 파일에 덮어씁니다(원본은 백업 폴더에 최근 10개까지 남습니다). 게임 필터 목록에는 <code>.filter</code> 파일만 나오므로 이름은 <code>.filter</code> 로 제안됩니다. 게임에서는 <b>ESC → 설정 → UI → 아이템 필터</b>에서 고릅니다.</li>
     <li>새 버전이 나오면 오른쪽 위에 알림이 뜹니다. 알림이 보이지 않으면 왼쪽 위 <b>버전 글자</b>를 눌러 직접 확인할 수 있습니다.</li>
   </ul>
   <div class="note">필터를 고칠 때 바뀐 줄만 수정되고 나머지는 원문 그대로 유지됩니다. 저장하기 전까지는 <kbd>Ctrl</kbd>+<kbd>Z</kbd>로 몇 번이든 되돌릴 수 있습니다.</div>
@@ -185,7 +186,7 @@ footer p { margin: 4px 0; }
 </main>
 <footer><div class="wrap">
   <p>이 프로그램은 Grinding Gear Games 와 관계없는 팬 제작 도구입니다. 아이콘(신성한 오브) 등 게임 이미지의 저작권은 Grinding Gear Games 에 있습니다.</p>
-  <p>아이템 한글 이름은 poedb.tw · poe2db.tw 를 참고했습니다. 화면 예시는 v0.3.7 기준입니다.</p>
+  <p>아이템 한글 이름은 poedb.tw · poe2db.tw 를 참고했습니다. 화면 예시는 v0.3.9 기준입니다.</p>
 </div></footer>
 </body>
 </html>
